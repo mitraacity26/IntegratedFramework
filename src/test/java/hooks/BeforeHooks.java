@@ -108,6 +108,7 @@ public class BeforeHooks extends BrowserDriver {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-debugging-port=9222");
              options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--headless");
             driver = new ChromeDriver(options);
         } else if (ExpectedBrowser.compareToIgnoreCase("Edge") == 0) {
             driver = new EdgeDriver();
