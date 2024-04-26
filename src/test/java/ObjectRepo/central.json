@@ -1,0 +1,25 @@
+{
+
+  "browser": "Chrome",
+  "url": "https://anupdamoda.github.io/AceOnlineShoePortal/index.html#",
+
+
+  "sauceLabWeb": "no",
+  "sauceLabMobileNativeIOS": "no",
+  "sauceLabMobileNativeAndroid": "no",
+  "sauceLabMobileWebIOS": "no",
+  "sauceLabMobileWebAndroid": "no",
+
+
+  "sauceURL": "https://ondemand.us-west-1.saucelabs.com:443/wd/hub",
+  "username": "arunava.mitra",
+  "accessKey": "d2e37da5-a9fb-4fb0-9221-a0687c03086f",
+  "build": "appium-build-335R8",
+  "name": "Sauce Test",
+
+
+
+  "appium:deviceName": "iPhone.*",
+  "appium:app": "storage:filename=SauceLabs-Demo-App-With-TestFairy.ipa"
+
+}
