@@ -25,9 +25,14 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '21'
-        distribution: 'oracle'
+        distribution: 'oracle'      
 
     - name: Build with Maven
       run: mvn clean test
-
+      
+    - name: Deploy report page to GitHub page
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        publish_dir: ./target/cucumber-report-html-Maven/cucumber-html-reports
 
