@@ -30,7 +30,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean verify
       
-    - name: Deploy report page to GitHub page
+    - name: Deploy Report page to GitHub page
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
